@@ -17,7 +17,7 @@ export default function WorkshopPage() {
   };
   return (
     <>
-    <div className="min-h-screen  bg-gradient-to-b from-[#202020] to-[#000] overflow-x-hidden">
+    <div className="min-h-screen  bg-gradient-to-b from-[#131313] to-[#000] overflow-x-hidden">
       <Image 
         alt="Background" 
         width={1200} 
@@ -36,12 +36,18 @@ export default function WorkshopPage() {
           alt="Background" 
           width={1200} 
           height={1200} 
-          className="absolute z-0" 
+          className="absolute z-0 pointer-events-none" 
           src="/bg4.png"
         />
         <Schedule />
         <SwiperCarousel/>
-        <Image alt="bg" width={1200} height={1200} className="absolute z-0 right-0" src="/bg3.png"/>
+        <Image 
+          alt="bg" 
+          width={1200} 
+          height={1200} 
+          className="absolute z-0 right-0 pointer-events-none" 
+          src="/bg3.png"
+        />
         <FaqGrid />
         <Footer />
       </motion.div>
